@@ -14,9 +14,24 @@ Spring Application With Prometheus and Grafana
 docker network create my-network
 ```
 
+### Docker build
+
+```bash
+docker build --tag my-spring-app .
+```
+
+### Docker run
+
+```bash
+docker run --name my-spring-app -p "8080:8080" my-spring-app
+```
+
 ### Docker creation
 
 ```bash
+# For Prometheus and Grafana
+# docker-development-environment folder
+
 docker-compose up -d
 
 or
